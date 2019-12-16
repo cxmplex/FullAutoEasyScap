@@ -12,7 +12,7 @@ You have to have to unlock protected functions in WoW's Lua API. I recommend mak
 Nothing much, I added a one-liner in `EasyScrap_Functions\EasyScrap:addQueueItems` to simply click the scrapping button frame once the items have been queue'd. 
 
 ```
-			local a, scr = ScrappingMachineFrame.ScrapButton scr = a:GetScript("OnClick") scr(a)
+local a, scr = ScrappingMachineFrame.ScrapButton scr = a:GetScript("OnClick") scr(a)
 ```
 
 Hit `Queue All` once and it will continue scrapping until you are out of items. This saves you from having to click once every 9 items.
